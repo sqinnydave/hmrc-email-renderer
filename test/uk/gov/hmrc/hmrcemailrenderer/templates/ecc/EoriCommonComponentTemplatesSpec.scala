@@ -27,7 +27,7 @@ class EoriCommonComponentTemplatesSpec extends TemplateComparisonSpec with Commo
   private val fullParams = commonParameters + (
     "recipientName_FullName" -> "Jane Jones",
     "recipientOrgName"       -> "JJ Components",
-    "serviceName"            -> "Advance Tariff Rulings",
+    "serviceName"            -> "Advance & Tariff Rulings",
     "completionDate"         -> "22 March 2019"
   )
 
