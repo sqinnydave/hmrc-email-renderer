@@ -22,7 +22,7 @@ import scala.util.Try
 import scala.util.control.NonFatal
 
 object AmountFormatter {
-
+ val logger: Logger = Logger(this.getClass())
   private val formatter = {
     Locale.setDefault(Locale.UK)
     val en = Currency.getInstance(Locale.UK)
@@ -37,7 +37,7 @@ object AmountFormatter {
   private def toDouble(s: String): Double =
     Try(s.toDouble)
       .recover {
-        case NonFatal(e) => Logger.warn(s"Amount formatter number parse exception: ${e.getMessage}"); 0D
+        case NonFatal(e) => logger.warn(s"Amount formatter number parse exception: ${e.getMessage}"); 0D
       }
       .getOrElse(0D)
 

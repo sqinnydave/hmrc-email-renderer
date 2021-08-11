@@ -22,7 +22,7 @@ import scala.util.Try
 import scala.util.control.NonFatal
 
 object DateFormatter {
-
+ val logger: Logger = Logger(this.getClass())
   def formatMonth(month: String): String = month match {
     case "01" => "January"
     case "02" => "February"
@@ -49,7 +49,7 @@ object DateFormatter {
   private def formatDay(day: String): String =
     Try(day.toInt.toString)
       .recover {
-        case NonFatal(e) => Logger.warn(s"Day parse exception: ${e.getMessage}"); day
+        case NonFatal(e) => logger.warn(s"Day parse exception: ${e.getMessage}"); day
       }
       .getOrElse(day)
 
