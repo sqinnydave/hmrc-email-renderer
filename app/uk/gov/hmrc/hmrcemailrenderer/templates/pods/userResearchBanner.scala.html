@@ -16,17 +16,15 @@
 
 @(params: Map[String, Any])
 
-@uk.gov.hmrc.hmrcemailrenderer.templates.helpers.html.template_main(params, "Managing Pension Schemes - user research") {
+@uk.gov.hmrc.hmrcemailrenderer.templates.helpers.html.template_main(params, "The following user has indicated that they would like to take part in pensions schemes user research.") {
 
-<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;">The following user has indicated that they would like to take part in pensions schemes user research.</p>
+<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;"><b>Name:</b> @{params("psaName").toString}</p>
 
-<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;">Name: @{params("psaName").toString}</p>
+ <p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;"><b>Company/organisation name:</b> @{params("comOrgName").toString}</p>
 
-<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;">Company/organisation name: @{params("comOrgName").toString}</p>
+ <p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;"><b>PSA ID:</b> @{params("psaId").toString}</p>
 
-<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;">PSA ID: @{params("psaId").toString}</p>
-
-<p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;">Email: @{params("psaEmail").toString}</p>
+ <p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;"><b>Email:</b> @{params("psaEmail").toString}</p>
 
 <p style="font-size: 20px; line-height: 1.315789474; margin: 0 0 30px 0;"> From HMRC Pension Schemes Services</p>
 }
