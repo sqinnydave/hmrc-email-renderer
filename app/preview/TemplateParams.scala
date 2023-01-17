@@ -3154,6 +3154,12 @@ object TemplateParams2 {
     "pods_psa_amend" -> Map(
       "psaName" -> "Jane Doe"
     ),
+    "pods_user_research_banner" -> Map(
+      "psaName" -> "Jane Doe",
+      "comOrgName" -> "CompanyTest",
+      "psaId" -> "1234567890",
+      "psaEmail" -> "janedoe@test.com"
+    ),
     "hec_tax_check_code" -> Map(
       "currentDate"     -> "13 January 2022",
       "licenceType"     -> "Driver of taxis and private hires",
