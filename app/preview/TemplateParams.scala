@@ -2028,19 +2028,11 @@ object TemplateParams2 {
       "name" -> "Joe Bloggs",
       "ref"  -> "VRS 1234 5678 9012"
     ),
-    "mtdfb_vatreg_registration_received_email" -> Map(
-      "name" -> "Joe Bloggs",
-      "ref"  -> "VRS 1234 5678 9012"
-    ),
     "mtdfb_vatreg_registration_received_post" -> Map(
       "name" -> "Joe Bloggs",
       "ref"  -> "VRS 1234 5678 9012"
     ),
     "mtdfb_vatreg_registration_received_cy" -> Map(
-      "name" -> "Joe Bloggs",
-      "ref"  -> "VRS 1234 5678 9012"
-    ),
-    "mtdfb_vatreg_registration_received_email_cy" -> Map(
       "name" -> "Joe Bloggs",
       "ref"  -> "VRS 1234 5678 9012"
     ),
@@ -3272,11 +3264,35 @@ object TemplateParams3 {
       "submissionReference" -> "NC38-N2ZC-TH68",
       "companyName"         -> "Acquisitions Incorporated"
     ),
+    "ecc_registration_successful" -> Map(
+      "recipientName_FullName" -> "Jane Jones",
+      "serviceName"            -> "Advance Tariff Rulings",
+      "enrolmentKey"           -> "HMRC-ATAR-ORG"
+    ),
+    "ecc_registration_successful_cy" -> Map(
+      "recipientName_FullName" -> "Jane Jones",
+      "serviceName"            -> "Advance Tariff Rulings",
+      "enrolmentKey"           -> "HMRC-ATAR-ORG"
+    ),
     "eis_confirmation" -> Map(
       "customerName"        -> "Hugh Mann",
       "submissionReference" -> "NC38-N2ZC-TH68"
     ),
     "eis_code" -> Map(
+      "confirmationCode" -> "HGDY"
+    ),
+    "seis_confirmation" -> Map(
+      "customerName"        -> "Hugh Mann",
+      "submissionReference" -> "NC38-N2ZC-TH68"
+    ),
+    "seis_code" -> Map(
+      "confirmationCode" -> "HGDY"
+    ),
+    "ca3822_confirmation" -> Map(
+      "customerName"        -> "Hugh Mann",
+      "submissionReference" -> "NC38-N2ZC-TH68"
+    ),
+    "ca3822_code" -> Map(
       "confirmationCode" -> "HGDY"
     ),
     "face_to_face_payment_email_successful_cy" -> Map(
