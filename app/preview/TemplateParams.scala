@@ -3155,10 +3155,10 @@ object TemplateParams2 {
       "psaName" -> "Jane Doe"
     ),
     "pods_user_research_banner" -> Map(
-      "psaName" -> "Jane Doe",
-      "comOrgName" -> "CompanyTest",
+      "psaName" -> "Nigel Robert Smith",
+      "comOrgName" -> "CompanyTestName",
       "psaId" -> "1234567890",
-      "psaEmail" -> "janedoe@test.com"
+      "psaEmail" -> "nigel@test.com"
     ),
     "hec_tax_check_code" -> Map(
       "currentDate"     -> "13 January 2022",
